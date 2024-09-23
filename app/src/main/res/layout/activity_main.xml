@@ -10,8 +10,6 @@
     android:padding="10dp"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="200dp"
@@ -31,14 +29,11 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center">
-
-
         <Button
             android:id="@+id/button1"
             android:layout_width="wrap_content"
@@ -54,5 +49,13 @@
             android:backgroundTint="#159D43"
             android:text="Green" />
     </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="20dp"
+        android:id="@+id/custombutton1"
+        android:text="Custom Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_ct"
+        />
 
 </LinearLayout>

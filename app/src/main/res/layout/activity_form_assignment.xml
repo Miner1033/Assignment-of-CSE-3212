@@ -28,13 +28,13 @@
                 android:id="@+id/tvTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="16dp"
-                android:text="LU Rimon Club"
-                android:textSize="30sp"
-                android:textStyle="bold"
                 android:gravity="center"
+                android:text="LU Rimon Club"
                 android:textColor="#2a2a2a"
-                android:layout_gravity="center_horizontal" />
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <!-- Name Input -->
             <EditText
@@ -42,9 +42,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
+                android:background="@drawable/custom_edittext"
                 android:hint="Name"
-                android:inputType="textPersonName"
-                android:background="@drawable/custom_edittext" />
+                android:inputType="textPersonName" />
 
             <!-- Student ID Input -->
             <EditText
@@ -52,9 +52,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
+                android:background="@drawable/custom_edittext"
                 android:hint="Student Id"
-                android:inputType="number"
-                android:background="@drawable/custom_edittext" />
+                android:inputType="number" />
 
             <!-- Phone Number Input -->
             <EditText
@@ -62,9 +62,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
+                android:background="@drawable/custom_edittext"
                 android:hint="Phone Number"
-                android:inputType="phone"
-                android:background="@drawable/custom_edittext" />
+                android:inputType="phone" />
 
             <!-- Email Input -->
             <EditText
@@ -72,9 +72,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
+                android:background="@drawable/custom_edittext"
                 android:hint="Email"
-                android:inputType="textEmailAddress"
-                android:background="@drawable/custom_edittext"/>
+                android:inputType="textEmailAddress" />
 
             <!-- Password Input with Toggle Visibility -->
             <RelativeLayout
@@ -86,9 +86,9 @@
                     android:id="@+id/etPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/custom_edittext"
                     android:hint="Password"
                     android:inputType="textPassword"
-                    android:background="@drawable/custom_edittext"
                     android:paddingEnd="50dp" />
 
                 <ImageView
@@ -97,9 +97,9 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
+                    android:contentDescription="Toggle Password Visibility"
                     android:padding="8dp"
-                    android:src="@drawable/eye_24"
-                    android:contentDescription="Toggle Password Visibility" />
+                    android:src="@drawable/eye_24" />
             </RelativeLayout>
 
             <!-- Submit Button -->
@@ -107,11 +107,11 @@
                 android:id="@+id/btnSubmit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Submit"
                 android:layout_gravity="center_horizontal"
-                android:padding="8dp"
-                android:textAllCaps="false"
                 android:backgroundTint="#2a2a2a"
+                android:padding="8dp"
+                android:text="Submit"
+                android:textAllCaps="false"
                 android:textColor="@android:color/white" />
 
             <!-- Reset Button -->
@@ -119,12 +119,12 @@
                 android:id="@+id/btnReset"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Reset"
-                android:layout_marginTop="8dp"
                 android:layout_gravity="center_horizontal"
-                android:padding="8dp"
-                android:textAllCaps="false"
+                android:layout_marginTop="8dp"
                 android:backgroundTint="#2a2a2a"
+                android:padding="8dp"
+                android:text="Reset"
+                android:textAllCaps="false"
                 android:textColor="@android:color/white" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>

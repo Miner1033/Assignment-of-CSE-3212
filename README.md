@@ -1,4 +1,4 @@
-CSE-3212: App Development Course Assignments 📱
+*CSE-3212: App Development Course Assignments* 📱
 
 Welcome to the repository for CSE-3212: App Development course assignments!
 This repository contains all the assignments completed during the course, showcasing the skills and concepts learned. 🚀

@@ -4,44 +4,68 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
-
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
+import android.widget.BaseAdapter;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
-    ArrayList<String>CityName;
-    Context c;
-    public MyAdapter(Context c,ArrayList<String>CityName) {
-        this.c=c;
-        this.CityName=CityName;
-    }
+public class MyAdapter extends BaseAdapter {
+    private Context context;
+    private ArrayList<Item> items;
 
-    @NonNull
-    @Override
-    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v= LayoutInflater.from(c).inflate(R.layout.rowlayout,parent,false);
-        MyViewHolder VH=new MyViewHolder(v);
-        return VH;
+    // Constructor
+    public MyAdapter(Context context, ArrayList<Item> items) {
+        this.context = context;
+        this.items = items;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, final int position) {
-        holder.nameText.setText(CityName.get(position));
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(c, CityName.get(position) + " is a District name", Toast.LENGTH_SHORT).show();
-
-            }
-        });
-
+    public int getCount() {
+        return items.size();
     }
 
     @Override
-    public int getItemCount() {
-        return CityName.size();
+    public Object getItem(int position) {
+        return items.get(position);
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        // ViewHolder pattern for better performance
+        ViewHolder holder;
+
+        if (convertView == null) {
+            // Inflate the layout
+            convertView = LayoutInflater.from(context).inflate(R.layout.list_item, parent, false);
+
+            // Initialize ViewHolder
+            holder = new ViewHolder();
+            holder.title = convertView.findViewById(R.id.textViewTitle);
+            holder.subtitle = convertView.findViewById(R.id.textViewSubtitle);
+
+            // Set the ViewHolder as a tag to reuse
+            convertView.setTag(holder);
+        } else {
+            // Reuse the ViewHolder
+            holder = (ViewHolder) convertView.getTag();
+        }
+
+        // Set the data for the current item
+        Item currentItem = items.get(position);
+        holder.title.setText(currentItem.getTitle());
+        holder.subtitle.setText(currentItem.getSubtitle());
+
+        return convertView;
+    }
+
+    // ViewHolder class to hold references to views
+    static class ViewHolder {
+        TextView title;
+        TextView subtitle;
     }
 }

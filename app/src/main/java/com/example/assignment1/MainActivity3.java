@@ -27,7 +27,7 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Intent to open AssignmentActivity1
-                Intent intent = new Intent(MainActivity3.this, AssignmentActivity1.class);
+                Intent intent = new Intent(MainActivity3.this, MainActivity.class);
                 startActivity(intent);
             }
         });
@@ -36,7 +36,7 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Intent to open AssignmentActivity2
-                Intent intent = new Intent(MainActivity3.this, AssignmentActivity2.class);
+                Intent intent = new Intent(MainActivity3.this, Assignment2.class);
                 startActivity(intent);
             }
         });
@@ -45,7 +45,7 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Intent to open AssignmentActivity3
-                Intent intent = new Intent(MainActivity3.this, AssignmentActivity3.class);
+                Intent intent = new Intent(MainActivity3.this, Form_Assignment.class);
                 startActivity(intent);
             }
         });
@@ -54,7 +54,7 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Intent to open AssignmentActivity4
-                Intent intent = new Intent(MainActivity3.this, AssignmentActivity4.class);
+                Intent intent = new Intent(MainActivity3.this, Assignment_4.class);
                 startActivity(intent);
             }
         });
@@ -63,7 +63,7 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Intent to open AssignmentActivity5
-                Intent intent = new Intent(MainActivity3.this, AssignmentActivity5.class);
+                Intent intent = new Intent(MainActivity3.this, MainActivity2.class);
                 startActivity(intent);
             }
         });
@@ -72,7 +72,7 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Intent to open AssignmentActivity6
-                Intent intent = new Intent(MainActivity3.this, AssignmentActivity6.class);
+                Intent intent = new Intent(MainActivity3.this, Assignment_6.class);
                 startActivity(intent);
             }
         });
@@ -81,7 +81,7 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Intent to open AssignmentActivity7
-                Intent intent = new Intent(MainActivity3.this, AssignmentActivity7.class);
+                Intent intent = new Intent(MainActivity3.this, Assignment_7.class);
                 startActivity(intent);
             }
         });

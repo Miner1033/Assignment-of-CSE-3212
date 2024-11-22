@@ -26,6 +26,7 @@
 
             <!-- Button 1 -->
             <Button
+                android:backgroundTint="#2a2a2a"
                 android:id="@+id/btn_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -34,6 +35,7 @@
 
             <!-- Button 2 -->
             <Button
+                android:backgroundTint="#2a2a2a"
                 android:id="@+id/btn_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -43,6 +45,7 @@
             <!-- Button 3 -->
             <Button
                 android:id="@+id/btn_3"
+                android:backgroundTint="#2a2a2a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Assignment 3"
@@ -51,6 +54,7 @@
             <!-- Button 4 -->
             <Button
                 android:id="@+id/btn_4"
+                android:backgroundTint="#2a2a2a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Assignment 4"
@@ -59,6 +63,7 @@
             <!-- Button 5 -->
             <Button
                 android:id="@+id/btn_5"
+                android:backgroundTint="#2a2a2a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Assignment 5"
@@ -67,6 +72,7 @@
             <!-- Button 6 -->
             <Button
                 android:id="@+id/btn_6"
+                android:backgroundTint="#2a2a2a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Assignment 6"
@@ -75,6 +81,7 @@
             <!-- Button 7 -->
             <Button
                 android:id="@+id/btn_7"
+                android:backgroundTint="#2a2a2a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Assignment 7"

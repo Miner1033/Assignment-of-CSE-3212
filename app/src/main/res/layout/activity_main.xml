@@ -52,7 +52,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:layout_marginTop="20dp"
         android:id="@+id/custombutton1"
-        android:text="Custom Button"
+        android:text="Click for change image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/btn_ct"
